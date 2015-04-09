@@ -4,7 +4,7 @@ This WordPress theme was developed for the [share-research.org](http://share-res
 
 ### CSS modifications
 
-To modify the CSS it is strongly suggested that you work with the SASS partials in this folder: ```wp-content/themes/share/scss```  For more information about SASS partials, please see this article: http://thesassway.com/beginner/how-to-structure-a-sass-project
+To modify the CSS it is strongly suggested that you work with the SASS partials in the ```scss``` folder. For more information about SASS partials, please see [How to Structure a SASS Project](http://thesassway.com/beginner/how-to-structure-a-sass-project).
 
 Working with SASS partials as opposed to editing the compiled CSS makes for a much more maintainable and organized code structure.
 
@@ -15,11 +15,11 @@ You will need the following software installed:
 
 In order to compile .scss into .css, do the following: (OS X directions supplied, Windows will be similar but you won't use Terminal)
 
-* In Terminal, navigate to the template folder: ```wp-content/themes/share/```
+* In Terminal, navigate to the theme repository folder: ```share-theme/```
 * Type the following ```sass --watch scss:css``` and hit enter.
 * SASS will begin watching the scss folder. Saving anything in the scss folder will automatically compile a new main.css and main.css.map, both of which should be uploaded.
 
-### Credit
+### Credits
 
 This theme was developed by Ian Hamilton at [colorcrate.com](http://colorcrate.com). It is built on BlankSlate from [tidythemes.com](http://tidythemes.com).
 
