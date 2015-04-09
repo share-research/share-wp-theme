@@ -1,0 +1,165 @@
+/*
+==========================================================================
+  HOME STYLES (scss/partials/_home.scss)
+==========================================================================
+*/
+.page-template-template-landing-php {
+
+  #content {
+    .container {
+      padding-right: 70px;
+      padding-left: 70px;
+
+      @include media-query(mobile) {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .banner {
+    background-color: $blue-10;
+    background-image: url(../img/background-banner-2392x694.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center top;
+    color: $black;
+    padding: 75px 0;
+
+    .text {
+      @include span(50%);
+      padding-left: 0;
+
+      @include media-query(mobile) {
+        @include span(100%);
+        padding: 0;
+      }
+
+      p {
+        @include font-family-arvo-regular;
+        font-size: $large;
+        line-height: $large * 1.25;
+      }
+    }
+    .buttons {
+      @include span(40%);
+      padding-right: 0;
+      float: right;
+
+      @include media-query(mobile) {
+        @include span(100%);
+        padding: 0;
+      }
+    }
+  }
+
+  footer#page-footer {
+    margin-top: 0;
+  }
+}
+
+.standard-text-block {
+  padding: 80px 0;
+  text-align: center;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    padding: 0 22.5%;
+    color: $blue;
+
+    @include media-query(mobile) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+
+  .text {
+    padding: 0 22.5%;
+    text-align: left;
+
+    @include media-query(mobile) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+
+  .image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.blue-callout-block {
+  background: $blue;
+  padding: 80px 70px;
+
+  color: $white;
+
+  @include media-query(mobile) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .description { 
+    @include span(50%);
+
+    @include media-query(mobile) {
+      @include span(100%);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+
+  .image {
+    @include span(40%);
+    float: right;
+
+    @include media-query(mobile) {
+      @include span(100%);
+      margin-top: 50px;
+    }
+  }
+}
+
+// Home logo boxes
+// From EFC – March 30, 2015
+
+div.home-logo-box {
+  margin: 0 -40%;
+  text-align: center;
+
+  @include media-query(mobile) {
+    margin: 0;
+  }
+}
+
+div.home-logo-box a img {
+  width: 20%;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  opacity: .6;
+}
+
+div.home-logo-box img.spacer {
+  width: 10%;
+}
+
+div.home-logo-box a:hover img {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}

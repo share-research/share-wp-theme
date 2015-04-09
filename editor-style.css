@@ -1,0 +1,96 @@
+h1 {
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px; }
+  h1 b, h1 strong {
+    font-family: 'Arvo', serif;
+    font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 22px;
+      line-height: 1.2; } }
+
+h2 {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px; }
+  h2 b, h2 strong {
+    font-family: 'Arvo', serif;
+    font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 22px;
+      line-height: 1.2; } }
+
+h3 {
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27.5px; }
+  h3 b, h3 strong {
+    font-family: 'Arvo', serif;
+    font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    h3 {
+      font-size: 18px;
+      line-height: 1.2; } }
+
+h4 {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27.5px; }
+  h4 b, h4 strong {
+    font-family: 'Arvo', serif;
+    font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    h4 {
+      font-size: 18px;
+      line-height: 1.2; } }
+
+h5 {
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.5px; }
+  h5 b, h5 strong {
+    font-family: 'Arvo', serif;
+    font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    h5 {
+      font-size: 15px;
+      line-height: 1.2; } }
+
+h6 {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.5px; }
+  h6 b, h6 strong {
+    font-family: 'Arvo', serif;
+    font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    h6 {
+      font-size: 15px;
+      line-height: 1.2; } }
+
+p, ul, ol, blockquote {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6; }
+
+blockquote {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  padding-left: 30px;
+  margin-left: 25px;
+  border-left: 1px solid rgba(34, 36, 33, 0.15); }
+
+a {
+  color: #009ED4;
+  text-decoration: none; }
+  a:hover {
+    color: #E71DA7; }

@@ -1,0 +1,16 @@
+/*
+Theme Name: SHARE theme
+Theme URI: http://www.colorcrate.com
+Author: Ian Hamilton @colorcrate
+Author URI: http://colorcrate.com
+Description: <strong>MASTER THEME: SHOULD NEVER BE DELETED.</strong> A custom theme developed for SHARE.
+Version: 0.0.0
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: custom
+
+Based on, and then heavily modified from:
+BlankSlate WordPress Theme © 2011-2013 TidyThemes, distributed under the terms of the GNU GPL
+*/
+
+@import "css/main.css";

@@ -1,0 +1,120 @@
+//
+//	BORDER BOX
+//
+@mixin border-box {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+//
+//	FONT FAMILIES
+//
+@font-face {
+  font-family: 'twitter-icons';
+  src:url('../fonts/twitter-icons.eot?-1swkie');
+  src:url('../fonts/twitter-icons.eot?#iefix-1swkie') format('embedded-opentype'),
+    url('../fonts/twitter-icons.woff?-1swkie') format('woff'),
+    url('../fonts/twitter-icons.ttf?-1swkie') format('truetype'),
+    url('../fonts/twitter-icons.svg?-1swkie#twitter-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-family-twitter-icons {
+	font-family: 'twitter-icons';
+}
+@mixin font-family-arvo-regular {
+	font-family: 'Arvo', serif;
+ 	font-weight: 400;
+}
+@mixin font-family-arvo-bold {
+	font-family: 'Arvo', serif;
+ 	font-weight: 700;
+}
+
+@mixin font-family-open-sans-regular {
+	font-family: 'Open Sans', sans-serif;
+ 	font-weight: 400;
+}
+@mixin font-family-open-sans-semi-bold {
+	font-family: 'Open Sans', sans-serif;
+ 	font-weight: 600;
+}
+@mixin font-family-open-sans-extra-bold {
+	font-family: 'Open Sans', sans-serif;
+ 	font-weight: 800;
+}
+
+//
+//	FONT SIZES
+//
+$huge: 32px;
+$large: 22px;
+$medium: 18px;
+$default: 15px;
+$small: 12px;
+$tiny: 10px;
+
+@mixin font-size-huge {
+	font-size: $huge;
+	line-height: $huge * 1.25;
+}
+@mixin font-size-large {
+	font-size: $large;
+	line-height: $large * 1.25;
+}
+@mixin font-size-medium {
+	font-size: $medium;
+	line-height: $medium * 1.25;
+}
+@mixin font-size-default {
+	font-size: $default;
+	line-height: $default * 1.25;
+}
+@mixin font-size-small {
+	font-size: $small;
+	line-height: $small * 1.25;
+}
+@mixin font-size-tiny {
+	font-size: $tiny;
+	line-height: $tiny * 1.25;
+}
+
+//
+//	MISC. FONT STUFF
+//
+@mixin text-shadow {
+	text-shadow: 1px 1px 5px $black-50;
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+@mixin font-smoothing {
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+//
+//	BACKGROUNDS
+//
+@mixin background-cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+//
+//	TRANSITIONS
+//
+@mixin transition($type,$length) {
+	-webkit-transition: $type $length ease-in-out;
+	-moz-transition: $type $length ease-in-out;
+	-ms-transition: $type $length ease-in-out;
+	-o-transition: $type $length ease-in-out;
+	transition: $type $length ease-in-out;
+}

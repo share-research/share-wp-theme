@@ -1,0 +1,78 @@
+/*
+==========================================================================
+    TYPOGRAPHY (scss/partials/_typography.scss)
+==========================================================================
+*/
+
+h1 {
+    @include font-family-arvo-bold;
+    @include font-size-huge;
+    b, strong {
+        @include font-family-arvo-bold;
+    }
+
+    @include media-query(mobile) {
+        font-size: $large;
+        line-height: 1.2;
+    }
+}
+h2 {
+    @include font-family-arvo-regular;
+    @include font-size-huge;
+    b, strong {
+        @include font-family-arvo-bold;
+    }
+
+    @include media-query(mobile) {
+        font-size: $large;
+        line-height: 1.2;
+    }
+}
+h3 {
+    @include font-family-arvo-bold;
+    @include font-size-large;
+    b, strong {
+        @include font-family-arvo-bold;
+    }
+
+    @include media-query(mobile) {
+        font-size: $medium;
+        line-height: 1.2;
+    }
+}
+h4 {
+    @include font-family-arvo-regular;
+    @include font-size-large;
+    b, strong {
+        @include font-family-arvo-bold;
+    }
+
+    @include media-query(mobile) {
+        font-size: $medium;
+        line-height: 1.2;
+    }
+}
+h5 {
+    @include font-family-arvo-bold;
+    @include font-size-medium;
+    b, strong {
+        @include font-family-arvo-bold;
+    }
+
+    @include media-query(mobile) {
+        font-size: $default;
+        line-height: 1.2;
+    }
+}
+h6 {
+    @include font-family-arvo-regular;
+    @include font-size-medium;
+    b, strong {
+        @include font-family-arvo-bold;
+    }
+
+    @include media-query(mobile) {
+        font-size: $default;
+        line-height: 1.2;
+    }
+}

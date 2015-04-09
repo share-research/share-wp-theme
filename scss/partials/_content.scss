@@ -1,0 +1,148 @@
+/*
+==========================================================================
+	CONTENT (scss/partials/_content.scss)
+==========================================================================
+*/
+// Base content styles that apply across large swaths of the site.
+
+#content {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    @include media-query('tablet-and-larger') {
+      padding: 0 20px;
+    }
+  }
+}
+
+.section-header {
+  background-color: $blue;
+  background-image: url(../img/background-banner-2392x140.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center top;
+
+
+  h1 {
+    margin-top: 0;
+    padding: 15px 0 15px 70px;
+    color: $white;
+    font-size: $large;
+
+    @include media-query(mobile) {
+      margin: 0;
+      padding: 10px 30px;
+      font-size: $medium;
+      @include font-family-arvo-regular;
+    }
+  }
+}
+
+.main-content {
+  @include span(65%);
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 70px;
+
+  @include media-query('mobile') {
+    @include span(100%);
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+  }
+
+  &.full-width {
+    @include span(100%);
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+
+    @include media-query('mobile') {
+      padding-top: 25px;
+      padding-right: 30px;
+      padding-bottom: 40px;
+      padding-left: 30px;
+    }
+  }
+  
+  // Max media widths
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;   
+    }
+  }
+  iframe {
+    max-width: 100%;
+  }
+}
+
+.entry-title {
+  margin-top: 0;
+}
+
+.category-header,
+.tag-header {
+  margin-bottom: 30px;
+}
+
+// Pagination
+.nav-previous, .nav-next {
+  @include span(50%);
+
+  @include font-family-arvo-regular;
+  font-size: $medium;
+}
+.nav-previous {
+  padding-left: 0;
+}
+.nav-next {
+  padding-right: 0;
+  float: right;
+  text-align: right;
+}
+
+// Media alignment
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+  clear: both;
+}
+
+.alignleft {
+  margin: 0 15px 15px 0;
+  float: left;
+  clear: both;
+
+  @include media-query(mobile) {
+    max-width: 45%;
+    height: auto;
+  }
+}
+
+.alignright {
+  margin: 0 0 15px 15px;
+  float: right;
+  clear: both;
+
+  @include media-query(mobile) {
+    max-width: 45%;
+    height: auto;
+  }
+}

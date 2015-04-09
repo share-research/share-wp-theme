@@ -1,0 +1,27 @@
+/*
+==========================================================================
+  CONTACT STYLES (scss/partials/_contact.scss)
+==========================================================================
+*/
+article.contact {
+  // Form styles
+  .gform_wrapper {
+    .email,
+    .organization {
+      @include span(50%);
+
+      @include media-query(mobile) {
+        @include span(100%);
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .email {
+      padding-left: 0;
+    }
+    .organization {
+      padding-right: 0;
+      clear: none;
+    }
+  }
+}

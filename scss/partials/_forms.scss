@@ -1,0 +1,252 @@
+/*
+==========================================================================
+	FORMS (scss/partials/_forms.scss)
+==========================================================================
+*/
+// NOTE THAT SCSS FOR THE LAYOUT OF SPECIFIC FORMS
+// (eg. the Contact form) IS LOCATED WITHIN THE 
+// APPROPRIATE SCSS PARTIALS (eg. _contact.scss)
+
+// Generic form element styles
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 8px;
+  
+  border: 1px solid $black-25;
+  color: $black-65;
+  font-size: $default;
+  @include font-family-open-sans-regular;
+
+  @include transition(all,250ms);
+
+  &:focus {
+    border: 1px solid $black;
+    color: $black;
+  }
+}
+
+input[type=submit] {
+  padding: 7px 15px;
+
+  background: $blue;
+  border: 0;
+  color: $white;
+  @include font-family-arvo-bold;
+  font-size: $medium;
+
+  @include transition(background,250ms);
+
+  &:hover,
+  &:focus {
+    background: $black;
+  }
+}
+
+label {
+  @include font-family-arvo-regular;
+}
+
+// Gravity Forms specific
+.gform_wrapper {
+ 
+  ul.gform_fields {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li.gfield {
+    margin-bottom: 30px;
+    clear: both;
+  }
+
+  .gfield_required {
+    color: $magenta;
+    font-weight: bold;
+  }
+
+  .ginput_complex { // Eg. name fields w/ two inputs
+
+    &:after { // Clear the floats on .ginput_left and _right
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .ginput_left,
+    .ginput_right {
+      @include span(50%);
+
+      input[type=text] {
+        width: 100%;
+      }
+
+      label {
+        color: $black-65;
+      }
+    }
+
+    .ginput_left {
+      padding-left: 0;
+    }
+    .ginput_right {
+      padding-right: 0;
+    }
+  }
+
+  .validation_error {
+    padding: 10px;
+    margin-bottom: 20px;
+
+    border-top: 5px solid $magenta;
+    background: $magenta-05;
+  }
+
+  .validation_message {
+    color: $magenta;
+  }
+
+  .gfield_error {
+    padding: 10px 15px !important;
+    
+    background: $magenta-05;
+    border-top: 5px solid $magenta;
+  }
+}
+.gform_confirmation_message {
+  padding: 30px 20px;
+  
+  background: $blue-05;
+  border-top: 5px solid $blue;
+  text-align: center;
+
+  h4 {
+    margin: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+//
+// Formstack
+//
+
+// Reset base existing styles
+.fsBody {
+  margin-bottom: 0;
+
+  .fsRowBody,
+  .fsSubmit {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.fsForm {
+  background: none !important;
+  border: 0;
+  padding: 0;
+  box-shadow: none !important;
+}
+.fsCell {
+  padding: 0;
+}
+// #fsRow1772252-1 { // Hide the introductory sentence
+//   display: none;
+// }
+#fsRow1772252-6 { // Hide the "fields with a * are required" because that's pretty obvious.
+  display: none;
+}
+.fsSubmit {
+  background: none !important;
+  padding: 5px 0 0;
+  margin-bottom: 0;
+}
+
+// Layout
+.fsForm {
+  input[type=text],
+  input[type=email] {
+    min-width: 100%;
+    margin: 0;
+  }
+}
+#fsRow1772252-2 { // First name
+  @include span(50%);
+  padding-left: 0;
+}
+#fsRow1772252-3 { // Last name
+  @include span(50%);
+  clear: none;
+  padding-right: 0;
+}
+#fsRow1772252-4 { // Email field
+  padding-top: 10px;
+}
+.fsSubmit {
+  input {
+    float: left;
+  }
+}
+
+// Formstack visual styles in content area
+.entry-content {
+  .fsBody {
+    .fsForm {
+      label {
+        @include font-family-open-sans-regular;
+        color: $black;
+        font-size: $default;
+      }
+      .fsRequiredMarker {
+        color: $blue;
+      }
+      input[type=text],
+      input[type=email] {
+        padding: 8px 5px;
+        background: $white-05;
+        border: 1px solid $blue-60 !important;
+
+        @include font-family-open-sans-regular;
+        color: $black-75;
+        font-size: $default;
+
+        &:focus {
+          color: $black;
+        }
+      }
+      input[type=submit] {
+        display: inline-block;
+        padding: 10px;
+        @include font-family-arvo-regular;
+      }
+
+      // Focus
+      .fsFieldFocused {
+        background-color: $white;
+
+        input[type=text],
+        input[type=email] {
+          border-color: $blue !important;
+        }
+      }
+
+      // Valdation error
+      .fsValidationError {
+        background-color: $white !important;
+      }
+    }
+  }
+  .fsError {
+    margin: 0 0 20px 0;
+    border: 1px solid $magenta;
+    background: $magenta-05;
+    color: $black;
+    @include font-family-open-sans-extra-bold;
+
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+  }
+}

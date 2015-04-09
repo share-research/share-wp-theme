@@ -1,0 +1,402 @@
+/*
+==========================================================================
+	FOOTER (scss/partials/_footer.scss)
+==========================================================================
+*/
+footer#page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 60px;
+  clear: both;
+
+  background-color: #5d5d5d;
+  color: $white;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include media-query('tablet-and-larger') {
+      padding: 0 20px;
+    }
+  }
+
+  h6 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  // Footer navigation
+  nav.footer-nav {
+    @include span(18%);
+
+    @include media-query(mobile) {
+      @include span(100%);
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    @include media-query(tablet) {
+      @include span(20%);
+    }
+
+    .logo {
+      display: block;
+      width: 66px;
+      height: 49px;
+
+      background: url(../img/logo-share-white-132x98.png) no-repeat;
+      background-size: 100% auto;
+
+      @include media-query(mobile) {
+        float: left;
+      }
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px 0 0 15px;
+
+      @include media-query(mobile) {
+        float: left;
+        width: calc(100% - 66px);
+        padding: 0 15px;
+        text-align: right;
+      }
+    }
+    li {
+      margin-bottom: 5px;
+      @include media-query(mobile) {
+        display: inline-block;
+        margin-left: 15px;
+      }
+    }
+    a {
+      color: $white;
+    }
+  }
+
+  // Mailing List
+  .mailing-list {
+    @include span(27.5%);
+
+    @include media-query(mobile) {
+      @include span(100%);
+      margin-top: 30px;
+      padding-top: 30px;
+      padding-right: 30px;
+      padding-left: 30px;
+      border-top: 1px solid $white-15;
+    }
+
+    @include media-query(tablet) {
+      @include span(40%);
+    }
+
+    //
+    // Formstack
+    //
+
+    // Reset base existing styles
+    .fsBody {
+      margin-bottom: 0;
+    }
+    .fsForm {
+      background: none;
+      border: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+    .fsCell {
+      padding: 0;
+    }
+    #fsRow1772252-1 { // Hide the introductory sentence
+      display: none;
+    }
+    #fsRow1772252-6 { // Hide the "fields with a * are required" because that's pretty obvious.
+      display: none;
+    }
+    .fsSubmit {
+      background: none;
+      padding: 5px 0 0;
+      margin-bottom: 0;
+    }
+
+    // Layout
+    .fsForm {
+      input[type=text],
+      input[type=email] {
+        min-width: 100%;
+        margin: 0;
+      }
+    }
+    #fsRow1772252-2 { // First name
+      @include span(50%);
+      padding-left: 0;
+    }
+    #fsRow1772252-3 { // Last name
+      @include span(50%);
+      clear: none;
+      padding-right: 0;
+    }
+    #fsRow1772252-4 { // Email field
+      padding-top: 10px;
+    }
+    .fsSubmit {
+      input {
+        float: left;
+      }
+    }
+
+    // Formstack Visual styls
+    .fsForm {
+      label {
+        @include font-family-open-sans-regular;
+        color: $white;
+        font-size: $default;
+      }
+      .fsRequiredMarker {
+        color: $blue;
+      }
+      input[type=text],
+      input[type=email] {
+        padding: 8px 5px;
+        background: $white-05;
+        border: 1px solid $white-60;
+
+        @include font-family-open-sans-regular;
+        color: $white-75;
+        font-size: $default;
+
+        &:focus {
+          color: $white;
+        }
+      }
+      input[type=submit] {
+        display: inline-block;
+        padding: 10px;
+        @include font-family-arvo-regular;
+      }
+
+      // Focus
+      .fsFieldFocused {
+        background-color: #5D5D5D;
+
+        input[type=text],
+        input[type=email] {
+          border-color: $white;
+        }
+      }
+
+      // Valdation error
+      .fsValidationError {
+        background-color: #5D5D5D !important;
+      }
+    }
+    .fsError {
+      margin: 0 0 20px 0;
+      border: 1px solid $white;
+      background: $magenta;
+      color: $white;
+      @include font-family-open-sans-extra-bold;
+
+      border-radius: 0;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+    }
+  }
+
+  // Twitter Feed
+  .twitter-feed {
+    @include span(27.5%);
+
+    @include media-query(mobile) {
+      @include span(100%);
+      margin-top: 40px;
+      padding-top: 40px;
+      padding-right: 30px;
+      padding-left: 30px;
+      border-top: 1px solid $white-15;
+    }
+
+    @include media-query(tablet) {
+      @include span(40%);
+    }
+
+    h6.twitter-logo {
+      min-height: 22px;
+      padding-left: 30px;
+
+      background: url(../img/icon-twitter-white-51x41.png) no-repeat;
+      background-position: left center;
+      background-size: 25px 20px;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $white-50;
+        }
+      }
+    }
+
+    .tweet {
+      ul {
+        list-style-type: none;
+        margin: 0; 
+        padding: 0;
+      }
+      a {
+        color: $white;
+        text-decoration: underline;
+        
+        &:hover {
+          color: $white-50;
+        }
+      }
+      .tweet_time, 
+      .actions {
+        display: inline;
+
+        a {
+          color: $white-60;
+          font-size: $small;
+          text-decoration: none;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+      .actions {
+        margin-left: 10px;
+        @include font-family-twitter-icons;
+
+        .tweet_reply:before {
+          content: "\e967";
+        }
+
+        .tweet_favorite:before {
+          content: "\e9d9";
+        }
+
+        .tweet_retweet:before {
+          content: "\ea2d";
+        }
+      }
+    }
+  }
+
+  // Twitter replacement
+  .twitter-replacement {
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  // Social/copyright info
+  .social-copyright {
+    @include span(25%);
+
+    @include media-query(mobile-and-tablet) {
+      @include span(100%);
+      margin-top: 40px;
+      padding-top: 40px;
+      padding-right: 30px;
+      padding-left: 30px;
+      border-top: 1px solid $white-15;
+    }
+
+
+
+    ul.social {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+
+      @include media-query(mobile-and-tablet) {
+        text-align: center;
+      }
+
+      li {
+        display: inline;
+        margin: 0 0 0 10px;
+      }
+
+      a {
+        color: $white;
+        font-size: $large;
+        text-decoration: none;
+
+        &:hover {
+          color: $white-50;
+        }
+      }
+    }
+
+    p,
+    address {
+      color: $white-50;
+      font-size: $small;
+      line-height: 1.25;
+      text-align: right;
+
+      @include media-query(mobile-and-tablet) {
+        text-align: center;
+      }
+
+      a {
+        color: $white-50;
+        text-decoration: underline;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    address {
+      @include media-query(tablet) {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Sub footer navigation
+.sub-footer {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include media-query('tablet-and-larger') {
+      padding: 0 20px;
+    }
+  }
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+    }
+    li {
+      display: inline;
+      margin: 0 15px;
+    }
+    a {
+      font-size: $small;
+      color: $black-75;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
