@@ -1,5 +1,7 @@
 # share-theme
 
+This WordPress theme was developed for the [share-research.org](http://share-research.org) website, but is available to anyone who might want to use it.
+
 ### CSS modifications
 
 To modify the CSS it is strongly suggested that you work with the SASS partials in this folder: ```wp-content/themes/share/scss```  For more information about SASS partials, please see this article: http://thesassway.com/beginner/how-to-structure-a-sass-project
