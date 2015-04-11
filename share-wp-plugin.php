@@ -4,8 +4,7 @@ Plugin Name: SHARE-research.org Plugin
 Description: Custom, site specific code and widgets for SHARE-research.org. Contact ian@colorcrate.com with questions.
 */
 
-include_once( TEMPLATEPATH.'plugins/advanced-custom-fields-pro/acf.php' );
-
+include_once( ABSPATH . 'wp-content/plugins/advanced-custom-fields-pro/acf.php' );
 
 // =====================================================
 //
