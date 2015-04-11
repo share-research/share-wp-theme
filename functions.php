@@ -2,9 +2,9 @@
 // we load the plugin right away since Ian designed it
 // as a separate plugin which usually loads before themes
 // check to see if our plugin has already been loaded
-//if (!class_exists('display_section_navigation')) {
-//	include_once('share-wp-plugin.php');
-//}
+if (!class_exists('display_section_navigation')) {
+	include_once('share-wp-plugin.php');
+}
 
 add_action('after_setup_theme', 'blankslate_setup');
 function blankslate_setup() {
