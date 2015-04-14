@@ -78,7 +78,7 @@ var share = (function($) {
 			}
 
 			$("div.twitter-feed .tweet").tweet({ // Load a single tweet into any single tweet holder.
-				modpath: 'http://www.share-research.org/wp-content/themes/share/js/vendor/twitter/',
+				modpath: 'http://www.share-research.org/wp-content/themes/share-wp-theme/js/vendor/twitter/',
 				join_text: "auto",
 				username: "SHARE_research",
 				avatar_size: 0,
