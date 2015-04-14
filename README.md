@@ -1,4 +1,12 @@
-# share-theme
+# SHARE Theme for WordPress
+
+- Contributors: Alexander Celeste and Eric Celeste
+- Tags: wiki
+- Requires at least: 3.5
+- Tested up to: 4.1.1
+- Stable tag: 1.0.2
+- License: The MIT License
+- License URI: http://opensource.org/licenses/MIT
 
 This WordPress theme was developed for the [share-research.org](http://share-research.org) website, but is available to anyone who might want to use it.
 
