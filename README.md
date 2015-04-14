@@ -1,6 +1,6 @@
 # SHARE Theme for WordPress
 
-- Contributors: Ian Hamilton and Eric Celeste
+- Contributors: Ian Hamilton
 - Tags: wiki
 - Requires at least: 3.5
 - Tested up to: 4.1.1
@@ -34,3 +34,11 @@ This theme was developed by Ian Hamilton at [colorcrate.com](http://colorcrate.c
 ### Questions?
 
 Shoot Ian an email at [ian@colorcrate.com](mailto:ian@colorcrate.com?subject=SHARE theme).
+
+### Changelog
+
+version 1.0
+
+- initial version delivered by Ian
+- 1.0.1: updated for easier maintenance via GitHub (efc)
+- 1.0.2: fixed twitter error introduced by 1.0.1 (efc)
