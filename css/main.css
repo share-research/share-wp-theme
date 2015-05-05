@@ -1361,13 +1361,19 @@ label {
         padding-right: 2.38095%;
         margin-top: 50px; } }
 
+div.logo-box,
 div.home-logo-box {
   margin: 0 -40%;
   text-align: center; }
   @media only screen and (max-width: 768px) {
+    div.logo-box,
     div.home-logo-box {
       margin: 0; } }
 
+div.logo-box {
+  margin: 0; }
+
+div.logo-box a img,
 div.home-logo-box a img {
   width: 20%;
   -webkit-filter: grayscale(100%);
@@ -1375,9 +1381,11 @@ div.home-logo-box a img {
   filter: grayscale(100%);
   opacity: .6; }
 
+div.logo-box img.spacer,
 div.home-logo-box img.spacer {
   width: 10%; }
 
+div.logo-box a:hover img,
 div.home-logo-box a:hover img {
   filter: none;
   -webkit-filter: grayscale(0%);

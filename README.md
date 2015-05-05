@@ -3,8 +3,8 @@
 - Contributors: Ian Hamilton
 - Tags: wiki
 - Requires at least: 3.5
-- Tested up to: 4.1.1
-- Stable tag: 1.0.2
+- Tested up to: 4.2.1
+- Stable tag: 1.0.3
 - License: GNU General Public License
 - License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -23,7 +23,7 @@ You will need the following software installed:
 
 In order to compile .scss into .css, do the following: (OS X directions supplied, Windows will be similar but you won't use Terminal)
 
-* In Terminal, navigate to the theme repository folder: ```share-theme/```
+* In Terminal, navigate to the theme repository folder: ```share-wp-theme/```
 * Type the following ```sass --watch scss:css``` and hit enter.
 * SASS will begin watching the scss folder. Saving anything in the scss folder will automatically compile a new main.css and main.css.map, both of which should be uploaded.
 
@@ -42,3 +42,4 @@ version 1.0
 - initial version delivered by Ian
 - 1.0.1: updated for easier maintenance via GitHub (efc)
 - 1.0.2: fixed twitter error introduced by 1.0.1 (efc)
+- 1.0.3: added logo-box for smaller logos on other pages (efc)
